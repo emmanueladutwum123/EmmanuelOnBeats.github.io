@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmmanuelOnBeats | Music Portfolio</title>
+    <title>EmmanuelOnBeats | Professional Musician Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -607,78 +607,6 @@
         .fade-in {
             animation: fadeIn 1s ease forwards;
         }
-
-        /* Music Player */
-        .music-player {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--secondary);
-            border-radius: 50px;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            z-index: 100;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.3s ease;
-        }
-
-        .music-player.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .player-controls {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .player-btn {
-            background: none;
-            border: none;
-            color: var(--text);
-            font-size: 18px;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-
-        .player-btn:hover {
-            color: var(--accent);
-        }
-
-        .player-info {
-            max-width: 200px;
-        }
-
-        .player-title {
-            font-size: 14px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .player-artist {
-            font-size: 12px;
-            color: var(--light-text);
-        }
-
-        .progress-bar {
-            width: 100px;
-            height: 4px;
-            background: var(--primary);
-            border-radius: 2px;
-            overflow: hidden;
-        }
-
-        .progress {
-            height: 100%;
-            background: var(--accent);
-            width: 30%;
-        }
     </style>
 </head>
 <body>
@@ -720,9 +648,10 @@
             <div class="about-content">
                 <div class="about-text fade-in">
                     <h3>Rhythms and Strings: A Versatile Music & Arts Portfolio</h3>
-                    <p>My journey in music began in childhood, inspired by my mother, who played the brass band as a drummer in the Presbyterian Church of Ghana. Starting as a gospel drummer, I performed in numerous churches in Ghana and the United States.</p>
-                    <p>Over the past 12 years, my passion for the drum set has flourished, complemented by my skills in guitar (4 years) and piano (5 years). My musical repertoire spans diverse genres including Jazz, Gospel, Hillsong, Reggae, Highlife, Afrobeat, Pop, Hip-Hop, R&B, and more.</p>
-                    <p>At Soka University, I have taken advanced Jazz Ensemble and Strings classes, further refining my craft. I am recognized as the energetic and skillful drummer on campus.</p>
+                    <p>My journey in music began in childhood, inspired by my mother, who played the brass band as a drummer in the Presbyterian Church of Ghana, Abeka Congregation (now Royal Priesthood Congregation). My mother introduced me to a talented drummer at the church, where I laid my musical foundation.</p>
+                    <p>Starting as a gospel drummer, I performed in numerous churches in Ghana, including renowned congregations such as Presbyterian, Pentecost, ICGS, and Family Life International. In the United States, I have played for the Pentecost Church in Cleveland, Ohio, Pittsburgh, Pennsylvania, Columbia, New York, and Orange County, California.</p>
+                    <p>Over the past 12 years, my passion for the drum set has flourished, complemented by my skills in guitar (4 years) and piano (5 years). My musical repertoire spans diverse genres, including Jazz, Gospel, Hillsong, Reggae, Highlife, Afrobeat, Pop, Hip-Hop, R&B, Hiplife, and more.</p>
+                    <p>At Soka University, I have taken advanced Jazz Ensemble and Strings classes, further refining my craft. I am recognized as the energetic and skillful drummer on campus, a title that reflects my dedication to the art of percussion and my passion for musical expression.</p>
                     <div class="skills">
                         <span class="skill">Drumming</span>
                         <span class="skill">Percussion</span>
@@ -755,7 +684,7 @@
                     </div>
                     <div class="music-content">
                         <h3>Jazz Performances</h3>
-                        <p>Explore my jazz performances including L-O-V-E, My Song, Black Orpheus, and Don't Know Why.</p>
+                        <p>L-O-V-E by B. Kaempfer and M. Gabler, My Song by L. Siffre, Black Orpheus by L. Bonfa, Don't Know Why by Nora Jones</p>
                         <div class="music-links">
                             <a href="#" class="music-link"><i class="fab fa-youtube"></i></a>
                             <a href="#" class="music-link"><i class="fab fa-soundcloud"></i></a>
@@ -892,7 +821,7 @@
                 </div>
             </div>
             <div style="text-align: center; margin-top: 40px;">
-                <p>Photo with Grammy nominees and winners in Jazz music. I had an incredible opportunity to meet Roberta Gambarini, a two-time Grammy award nominee, and Tamir Hendelman, the Legendary Jazz pianist.</p>
+                <p>Photo with Grammy nominees and winners in Jazz music. I had an incredible opportunity to meet Roberta Gambarini, a two-time Grammy award nominee, and Tamir Hendelman, the Legendary Jazz pianist. We had a wonderful conversation about Jazz music, and they shared some experiences with me in music.</p>
             </div>
         </div>
     </section>
@@ -1018,22 +947,6 @@
         </div>
     </footer>
 
-    <!-- Music Player -->
-    <div class="music-player" id="music-player">
-        <div class="player-controls">
-            <button class="player-btn" id="prev-btn"><i class="fas fa-step-backward"></i></button>
-            <button class="player-btn" id="play-btn"><i class="fas fa-play"></i></button>
-            <button class="player-btn" id="next-btn"><i class="fas fa-step-forward"></i></button>
-        </div>
-        <div class="player-info">
-            <div class="player-title">L-O-V-E</div>
-            <div class="player-artist">EmmanuelOnBeats</div>
-        </div>
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
-    </div>
-
     <script>
         // Navigation
         const hamburger = document.getElementById('hamburger');
@@ -1086,27 +999,6 @@
         window.addEventListener('scroll', fadeInOnScroll);
         // Initial check
         fadeInOnScroll();
-
-        // Music player functionality
-        const musicPlayer = document.getElementById('music-player');
-        const playBtn = document.getElementById('play-btn');
-        let isPlaying = false;
-
-        // Show music player after a delay
-        setTimeout(() => {
-            musicPlayer.classList.add('active');
-        }, 3000);
-
-        // Play/pause functionality
-        playBtn.addEventListener('click', () => {
-            isPlaying = !isPlaying;
-            if (isPlaying) {
-                playBtn.innerHTML = '<i class="fas fa-pause"></i>';
-                musicPlayer.classList.add('active');
-            } else {
-                playBtn.innerHTML = '<i class="fas fa-play"></i>';
-            }
-        });
 
         // Contact form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
