@@ -118,7 +118,7 @@
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+                        url('images/hero-bg.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -607,6 +607,28 @@
         .fade-in {
             animation: fadeIn 1s ease forwards;
         }
+
+        /* Photo Upload Instructions */
+        .upload-instructions {
+            background: var(--secondary);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .upload-instructions h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .upload-instructions ol {
+            margin-left: 20px;
+            color: var(--light-text);
+        }
+
+        .upload-instructions li {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -664,7 +686,7 @@
                     </div>
                 </div>
                 <div class="about-image fade-in">
-                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Emmanuel performing">
+                    <img src="images/about-photo.jpg" alt="Emmanuel Adutwum - Professional Musician">
                 </div>
             </div>
         </div>
@@ -680,15 +702,14 @@
                 <!-- Jazz -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Jazz Performance">
+                        <img src="images/jazz-performance.jpg" alt="Jazz Performance">
                     </div>
                     <div class="music-content">
                         <h3>Jazz Performances</h3>
                         <p>L-O-V-E by B. Kaempfer and M. Gabler, My Song by L. Siffre, Black Orpheus by L. Bonfa, Don't Know Why by Nora Jones</p>
                         <div class="music-links">
-                            <a href="#" class="music-link"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="music-link"><i class="fab fa-soundcloud"></i></a>
-                            <a href="#" class="music-link"><i class="fas fa-headphones"></i></a>
+                            <a href="https://youtube.com/playlist?list=YOUR_JAZZ_PLAYLIST" class="music-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://soundcloud.com/emmanuelonbeats/sets/jazz-performances" class="music-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
                         </div>
                     </div>
                 </div>
@@ -696,15 +717,14 @@
                 <!-- Piano -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Piano Performance">
+                        <img src="images/piano-performance.jpg" alt="Piano Performance">
                     </div>
                     <div class="music-content">
                         <h3>Piano Grooves</h3>
                         <p>Christian Worship songs on the piano for spiritual edification and inspiration.</p>
                         <div class="music-links">
-                            <a href="#" class="music-link"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="music-link"><i class="fab fa-soundcloud"></i></a>
-                            <a href="#" class="music-link"><i class="fas fa-headphones"></i></a>
+                            <a href="https://youtube.com/playlist?list=YOUR_PIANO_PLAYLIST" class="music-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://soundcloud.com/emmanuelonbeats/sets/piano-grooves" class="music-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
                         </div>
                     </div>
                 </div>
@@ -712,15 +732,14 @@
                 <!-- Reggae -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Reggae Performance">
+                        <img src="images/reggae-performance.jpg" alt="Reggae Performance">
                     </div>
                     <div class="music-content">
                         <h3>Reggae Grooves</h3>
                         <p>I Got You Babe by Lucky Dube and One Love by Bob Marley performed with Insta Radio Band.</p>
                         <div class="music-links">
-                            <a href="#" class="music-link"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="music-link"><i class="fab fa-soundcloud"></i></a>
-                            <a href="#" class="music-link"><i class="fas fa-headphones"></i></a>
+                            <a href="https://youtube.com/playlist?list=YOUR_REGGAE_PLAYLIST" class="music-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://soundcloud.com/emmanuelonbeats/sets/reggae-grooves" class="music-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
                         </div>
                     </div>
                 </div>
@@ -728,15 +747,14 @@
                 <!-- Japanese Pop -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Japanese Pop Performance">
+                        <img src="images/japanese-pop.jpg" alt="Japanese Pop Performance">
                     </div>
                     <div class="music-content">
                         <h3>Japanese Pop</h3>
                         <p>Performances of Takaneno and Life Hack/Vaundy showcasing cultural diversity in music.</p>
                         <div class="music-links">
-                            <a href="#" class="music-link"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="music-link"><i class="fab fa-soundcloud"></i></a>
-                            <a href="#" class="music-link"><i class="fas fa-headphones"></i></a>
+                            <a href="https://youtube.com/playlist?list=YOUR_JAPANESE_POP_PLAYLIST" class="music-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://soundcloud.com/emmanuelonbeats/sets/japanese-pop" class="music-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
                         </div>
                     </div>
                 </div>
@@ -744,15 +762,14 @@
                 <!-- Guitar -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1558098329-a11cff621064?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Guitar Performance">
+                        <img src="images/guitar-performance.jpg" alt="Guitar Performance">
                     </div>
                     <div class="music-content">
                         <h3>Guitar Solos</h3>
                         <p>No Longer Slaves of Sin, Goodness of God by Jenn Johnson, and Oceans by Hillsong Worship.</p>
                         <div class="music-links">
-                            <a href="#" class="music-link"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="music-link"><i class="fab fa-soundcloud"></i></a>
-                            <a href="#" class="music-link"><i class="fas fa-headphones"></i></a>
+                            <a href="https://youtube.com/playlist?list=YOUR_GUITAR_PLAYLIST" class="music-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://soundcloud.com/emmanuelonbeats/sets/guitar-solos" class="music-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
                         </div>
                     </div>
                 </div>
@@ -760,15 +777,53 @@
                 <!-- B2B -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="B2B Performance">
+                        <img src="images/b2b-performance.jpg" alt="B2B Performance">
                     </div>
                     <div class="music-content">
                         <h3>Bridges 2 Business</h3>
                         <p>Special performance at B2B Competition with my band featuring Isn't She Lovely and Rythms.</p>
                         <div class="music-links">
-                            <a href="#" class="music-link"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="music-link"><i class="fab fa-soundcloud"></i></a>
-                            <a href="#" class="music-link"><i class="fas fa-headphones"></i></a>
+                            <a href="https://youtube.com/playlist?list=YOUR_B2B_PLAYLIST" class="music-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://soundcloud.com/emmanuelonbeats/sets/bridges-2-business" class="music-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Drum and Piano Grooves Links Section -->
+            <div class="section-title" style="margin-top: 80px;">
+                <h2>Music Grooves</h2>
+            </div>
+            <div class="music-grid">
+                <div class="music-card fade-in">
+                    <div class="music-content">
+                        <h3>Solo Drum Performances</h3>
+                        <p>Check out my solo drum performances showcasing technical skills and creative rhythms.</p>
+                        <div class="music-links">
+                            <a href="https://youtube.com/playlist?list=YOUR_DRUM_SOLO_PLAYLIST" class="music-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://soundcloud.com/emmanuelonbeats/sets/solo-drum-performances" class="music-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card fade-in">
+                    <div class="music-content">
+                        <h3>Piano Worship Grooves</h3>
+                        <p>Christian Worship songs played on piano for spiritual edification.</p>
+                        <div class="music-links">
+                            <a href="https://youtube.com/playlist?list=YOUR_PIANO_WORSHIP_PLAYLIST" class="music-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://soundcloud.com/emmanuelonbeats/sets/piano-worship-grooves" class="music-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="music-card fade-in">
+                    <div class="music-content">
+                        <h3>FOD Fest - Music in Common</h3>
+                        <p>Performance at Soka University BlackBox Theatre with Music In Common Organization.</p>
+                        <div class="music-links">
+                            <a href="https://youtube.com/playlist?list=YOUR_FOD_FEST_PLAYLIST" class="music-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a href="https://soundcloud.com/emmanuelonbeats/sets/fod-fest-music-in-common" class="music-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
                         </div>
                     </div>
                 </div>
@@ -784,37 +839,37 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Performance">
+                    <img src="images/gallery1.jpg" alt="Live Performance">
                     <div class="gallery-overlay">
                         <h3>Live Performance</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drumming">
+                    <img src="images/gallery2.jpg" alt="Drum Set Showcase">
                     <div class="gallery-overlay">
                         <h3>Drum Set Showcase</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Piano">
+                    <img src="images/gallery3.jpg" alt="Piano Performance">
                     <div class="gallery-overlay">
                         <h3>Piano Performance</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1558098329-a11cff621064?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Guitar">
+                    <img src="images/gallery4.jpg" alt="Guitar Solo">
                     <div class="gallery-overlay">
                         <h3>Guitar Solo</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Collaboration">
+                    <img src="images/gallery5.jpg" alt="Band Collaboration">
                     <div class="gallery-overlay">
                         <h3>Band Collaboration</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Stage">
+                    <img src="images/gallery6.jpg" alt="Stage Performance">
                     <div class="gallery-overlay">
                         <h3>Stage Performance</h3>
                     </div>
@@ -822,6 +877,30 @@
             </div>
             <div style="text-align: center; margin-top: 40px;">
                 <p>Photo with Grammy nominees and winners in Jazz music. I had an incredible opportunity to meet Roberta Gambarini, a two-time Grammy award nominee, and Tamir Hendelman, the Legendary Jazz pianist. We had a wonderful conversation about Jazz music, and they shared some experiences with me in music.</p>
+            </div>
+
+            <!-- Photo Upload Instructions -->
+            <div class="upload-instructions fade-in">
+                <h3>How to Add Your Photos to This Website</h3>
+                <ol>
+                    <li>Create a folder named "images" in your GitHub repository</li>
+                    <li>Upload your photos to this folder with these exact names:
+                        <ul>
+                            <li>hero-bg.jpg (for the background image)</li>
+                            <li>about-photo.jpg (your main profile photo)</li>
+                            <li>jazz-performance.jpg, piano-performance.jpg, etc. (for music categories)</li>
+                            <li>gallery1.jpg through gallery6.jpg (for the gallery section)</li>
+                        </ul>
+                    </li>
+                    <li>Make sure your photos are high quality but optimized for web (under 1MB each)</li>
+                    <li>Recommended dimensions:
+                        <ul>
+                            <li>Hero background: 1920x1080px</li>
+                            <li>About photo: 800x1000px (portrait)</li>
+                            <li>Music/gallery photos: 800x600px (landscape)</li>
+                        </ul>
+                    </li>
+                </ol>
             </div>
         </div>
     </section>
@@ -871,10 +950,10 @@
                         </div>
                     </div>
                     <div class="social-links" style="margin-top: 20px;">
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-soundcloud"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+                        <a href="https://youtube.com/emmanuelonbeats" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://instagram.com/emmanuelonbeats" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://soundcloud.com/emmanuelonbeats" class="social-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                        <a href="https://spotify.com/artist/emmanuelonbeats" class="social-link" target="_blank"><i class="fab fa-spotify"></i></a>
                     </div>
                 </div>
                 <div class="contact-form fade-in">
@@ -923,26 +1002,26 @@
                 <div class="footer-column">
                     <h3>Music Categories</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Jazz Performances</a></li>
-                        <li><a href="#">Piano Grooves</a></li>
-                        <li><a href="#">Reggae Grooves</a></li>
-                        <li><a href="#">Japanese Pop</a></li>
-                        <li><a href="#">Guitar Solos</a></li>
+                        <li><a href="#music">Jazz Performances</a></li>
+                        <li><a href="#music">Piano Grooves</a></li>
+                        <li><a href="#music">Reggae Grooves</a></li>
+                        <li><a href="#music">Japanese Pop</a></li>
+                        <li><a href="#music">Guitar Solos</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Connect With Me</h3>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-soundcloud"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com/emmanuelonbeats" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://instagram.com/emmanuelonbeats" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://soundcloud.com/emmanuelonbeats" class="social-link" target="_blank"><i class="fab fa-soundcloud"></i></a>
+                        <a href="https://spotify.com/artist/emmanuelonbeats" class="social-link" target="_blank"><i class="fab fa-spotify"></i></a>
+                        <a href="https://facebook.com/emmanuelonbeats" class="social-link" target="_blank"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 EmmanuelOnBeats. All Rights Reserved.</p>
+                <p>&copy; 2023 EmmanuelOnBeats. All Rights Reserved. | EmmanuelOnBeats.com</p>
             </div>
         </div>
     </footer>
