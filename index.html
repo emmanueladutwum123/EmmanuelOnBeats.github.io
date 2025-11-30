@@ -118,7 +118,7 @@
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+                        url('images/hero-bg.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -261,13 +261,12 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-            height: 500px;
         }
 
         .about-image img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            display: block;
             transition: transform 0.5s ease;
         }
 
@@ -275,7 +274,7 @@
             transform: scale(1.05);
         }
 
-        /* Music Section */
+        /* Music Section - FIXED FOR ANY PHOTO SIZE */
         .music-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -356,7 +355,7 @@
             transform: scale(1.1);
         }
 
-        /* Gallery Section */
+        /* Gallery Section - FIXED FOR ANY PHOTO SIZE */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -858,20 +857,6 @@
             animation: fadeIn 1s ease forwards;
         }
         
-        /* Image placeholder styling */
-        .image-placeholder {
-            width: 100%;
-            height: 100%;
-            background: var(--primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--light-text);
-            font-size: 1rem;
-            text-align: center;
-            padding: 20px;
-        }
-        
         /* Loading fallback for images */
         .music-image img, .gallery-item img, .event-image img, .performance-image img {
             background: var(--primary);
@@ -937,7 +922,7 @@
                     </div>
                 </div>
                 <div class="about-image fade-in">
-                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Emmanuel Adutwum - Professional Musician">
+                    <img src="images/about-photo.jpg" alt="Emmanuel Adutwum - Professional Musician">
                 </div>
             </div>
         </div>
@@ -1002,7 +987,7 @@
                     <p class="performance-location">Aliso Viejo Performing Arts Centre, CA 92656</p>
                     <p class="performance-description">Closing the season with a powerful performance featuring original compositions and jazz standards.</p>
                     <div class="performance-image">
-                        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Upcoming Performance">
+                        <img src="images/upcoming-performance.jpg" alt="Upcoming Performance">
                     </div>
                 </div>
                 
@@ -1073,7 +1058,7 @@
             <div class="special-events">
                 <div class="special-event fade-in">
                     <div class="event-image">
-                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Music In Common Event">
+                        <img src="images/music-in-common.jpg" alt="Music In Common Event">
                     </div>
                     <div class="event-content">
                         <h3>Music In Common Performance</h3>
@@ -1083,7 +1068,7 @@
                 
                 <div class="special-event fade-in">
                     <div class="event-image">
-                        <img src="https://images.unsplash.com/photo-1511735111819-9a3f7709049c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Meeting Grammy Nominees">
+                        <img src="images/grammy-nominees.jpg" alt="Meeting Grammy Nominees">
                     </div>
                     <div class="event-content">
                         <h3>Meeting Grammy Jazz Artists</h3>
@@ -1093,7 +1078,7 @@
                 
                 <div class="special-event fade-in">
                     <div class="event-image">
-                        <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="B2B Competition">
+                        <img src="images/b2b-performance.jpg" alt="B2B Competition">
                     </div>
                     <div class="event-content">
                         <h3>Bridges 2 Business Competition</h3>
@@ -1161,7 +1146,7 @@
                 <!-- Jazz -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Jazz Performance" loading="lazy">
+                        <img src="images/jazz-performance.jpg" alt="Jazz Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Jazz Performances</h3>
@@ -1176,7 +1161,7 @@
                 <!-- Piano -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Piano Performance" loading="lazy">
+                        <img src="images/piano-performance.jpg" alt="Piano Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Piano Grooves</h3>
@@ -1191,7 +1176,7 @@
                 <!-- Reggae -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Reggae Performance" loading="lazy">
+                        <img src="images/reggae-performance.jpg" alt="Reggae Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Reggae Grooves</h3>
@@ -1206,7 +1191,7 @@
                 <!-- Japanese Pop -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Japanese Pop Performance" loading="lazy">
+                        <img src="images/japanese-pop.jpg" alt="Japanese Pop Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Japanese Pop</h3>
@@ -1221,7 +1206,7 @@
                 <!-- Guitar -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Guitar Performance" loading="lazy">
+                        <img src="images/guitar-performance.jpg" alt="Guitar Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Guitar Solos</h3>
@@ -1236,7 +1221,7 @@
                 <!-- B2B -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="B2B Performance" loading="lazy">
+                        <img src="images/b2b-performance.jpg" alt="B2B Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Bridges 2 Business</h3>
@@ -1298,37 +1283,37 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Live Performance" loading="lazy">
+                    <img src="images/gallery1.jpg" alt="Live Performance" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Live Performance</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Drum Set Showcase" loading="lazy">
+                    <img src="images/gallery2.jpg" alt="Drum Set Showcase" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Drum Set Showcase</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Piano Performance" loading="lazy">
+                    <img src="images/gallery3.jpg" alt="Piano Performance" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Piano Performance</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Guitar Solo" loading="lazy">
+                    <img src="images/gallery4.jpg" alt="Guitar Solo" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Guitar Solo</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Band Collaboration" loading="lazy">
+                    <img src="images/gallery5.jpg" alt="Band Collaboration" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Band Collaboration</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" alt="Stage Performance" loading="lazy">
+                    <img src="images/gallery6.jpg" alt="Stage Performance" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Stage Performance</h3>
                     </div>
@@ -1531,13 +1516,7 @@
             images.forEach(img => {
                 img.addEventListener('error', function() {
                     console.log('Image failed to load:', this.src);
-                    // Create a placeholder div
-                    const placeholder = document.createElement('div');
-                    placeholder.className = 'image-placeholder';
-                    placeholder.innerHTML = 'Image Not Available';
-                    
-                    // Replace the image with the placeholder
-                    this.parentNode.replaceChild(placeholder, this);
+                    this.style.display = 'none';
                 });
             });
         });
