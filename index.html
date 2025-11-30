@@ -118,7 +118,7 @@
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('images/hero-bg.jpg');
+                        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="%2316213e"/><text x="50%" y="50%" font-family="Arial" font-size="24" fill="%23ffffff" text-anchor="middle">Hero Background Image</text></svg>');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -857,6 +857,20 @@
             animation: fadeIn 1s ease forwards;
         }
         
+        /* Image placeholder styling */
+        .image-placeholder {
+            width: 100%;
+            height: 100%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-text);
+            font-size: 1rem;
+            text-align: center;
+            padding: 20px;
+        }
+        
         /* Loading fallback for images */
         .music-image img, .gallery-item img, .event-image img, .performance-image img {
             background: var(--primary);
@@ -922,7 +936,7 @@
                     </div>
                 </div>
                 <div class="about-image fade-in">
-                    <img src="images/about-photo.jpg" alt="Emmanuel Adutwum - Professional Musician">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='800' viewBox='0 0 600 800'><rect width='600' height='800' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>About Photo</text></svg>" alt="Emmanuel Adutwum - Professional Musician">
                 </div>
             </div>
         </div>
@@ -987,7 +1001,7 @@
                     <p class="performance-location">Aliso Viejo Performing Arts Centre, CA 92656</p>
                     <p class="performance-description">Closing the season with a powerful performance featuring original compositions and jazz standards.</p>
                     <div class="performance-image">
-                        <img src="images/upcoming-performance.jpg" alt="Upcoming Performance">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Upcoming Performance Image</text></svg>" alt="Upcoming Performance">
                     </div>
                 </div>
                 
@@ -1058,7 +1072,7 @@
             <div class="special-events">
                 <div class="special-event fade-in">
                     <div class="event-image">
-                        <img src="images/music-in-common.jpg" alt="Music In Common Event">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Music In Common Event</text></svg>" alt="Music In Common Event">
                     </div>
                     <div class="event-content">
                         <h3>Music In Common Performance</h3>
@@ -1068,7 +1082,7 @@
                 
                 <div class="special-event fade-in">
                     <div class="event-image">
-                        <img src="images/grammy-nominees.jpg" alt="Meeting Grammy Nominees">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Meeting Grammy Nominees</text></svg>" alt="Meeting Grammy Nominees">
                     </div>
                     <div class="event-content">
                         <h3>Meeting Grammy Jazz Artists</h3>
@@ -1078,7 +1092,7 @@
                 
                 <div class="special-event fade-in">
                     <div class="event-image">
-                        <img src="images/b2b-performance.jpg" alt="B2B Competition">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>B2B Competition</text></svg>" alt="B2B Competition">
                     </div>
                     <div class="event-content">
                         <h3>Bridges 2 Business Competition</h3>
@@ -1146,7 +1160,7 @@
                 <!-- Jazz -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="images/jazz-performance.jpg" alt="Jazz Performance" loading="lazy">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Jazz Performance</text></svg>" alt="Jazz Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Jazz Performances</h3>
@@ -1161,7 +1175,7 @@
                 <!-- Piano -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="images/piano-performance.jpg" alt="Piano Performance" loading="lazy">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Piano Performance</text></svg>" alt="Piano Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Piano Grooves</h3>
@@ -1176,7 +1190,7 @@
                 <!-- Reggae -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="images/reggae-performance.jpg" alt="Reggae Performance" loading="lazy">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Reggae Performance</text></svg>" alt="Reggae Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Reggae Grooves</h3>
@@ -1191,7 +1205,7 @@
                 <!-- Japanese Pop -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="images/japanese-pop.jpg" alt="Japanese Pop Performance" loading="lazy">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Japanese Pop Performance</text></svg>" alt="Japanese Pop Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Japanese Pop</h3>
@@ -1206,7 +1220,7 @@
                 <!-- Guitar -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="images/guitar-performance.jpg" alt="Guitar Performance" loading="lazy">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Guitar Performance</text></svg>" alt="Guitar Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Guitar Solos</h3>
@@ -1221,7 +1235,7 @@
                 <!-- B2B -->
                 <div class="music-card fade-in">
                     <div class="music-image">
-                        <img src="images/b2b-performance.jpg" alt="B2B Performance" loading="lazy">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>B2B Performance</text></svg>" alt="B2B Performance" loading="lazy">
                     </div>
                     <div class="music-content">
                         <h3>Bridges 2 Business</h3>
@@ -1283,37 +1297,37 @@
             </div>
             <div class="gallery-grid">
                 <div class="gallery-item fade-in">
-                    <img src="images/gallery1.jpg" alt="Live Performance" loading="lazy">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Live Performance</text></svg>" alt="Live Performance" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Live Performance</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="images/gallery2.jpg" alt="Drum Set Showcase" loading="lazy">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Drum Set Showcase</text></svg>" alt="Drum Set Showcase" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Drum Set Showcase</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="images/gallery3.jpg" alt="Piano Performance" loading="lazy">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Piano Performance</text></svg>" alt="Piano Performance" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Piano Performance</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="images/gallery4.jpg" alt="Guitar Solo" loading="lazy">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Guitar Solo</text></svg>" alt="Guitar Solo" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Guitar Solo</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="images/gallery5.jpg" alt="Band Collaboration" loading="lazy">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Band Collaboration</text></svg>" alt="Band Collaboration" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Band Collaboration</h3>
                     </div>
                 </div>
                 <div class="gallery-item fade-in">
-                    <img src="images/gallery6.jpg" alt="Stage Performance" loading="lazy">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'><rect width='1920' height='1080' fill='%2316213e'/><text x='50%' y='50%' font-family='Arial' font-size='24' fill='%23ffffff' text-anchor='middle'>Stage Performance</text></svg>" alt="Stage Performance" loading="lazy">
                     <div class="gallery-overlay">
                         <h3>Stage Performance</h3>
                     </div>
@@ -1516,7 +1530,13 @@
             images.forEach(img => {
                 img.addEventListener('error', function() {
                     console.log('Image failed to load:', this.src);
-                    this.style.display = 'none';
+                    // Create a placeholder div
+                    const placeholder = document.createElement('div');
+                    placeholder.className = 'image-placeholder';
+                    placeholder.innerHTML = 'Image Not Available';
+                    
+                    // Replace the image with the placeholder
+                    this.parentNode.replaceChild(placeholder, this);
                 });
             });
         });
