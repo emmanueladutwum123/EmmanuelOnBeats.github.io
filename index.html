@@ -3,7 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmmanuelOnBeats | Professional Musician Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Emmanuel Adutwum | Professional Musician Portfolio - Drummer, Pianist, Guitarist</title>
+    <meta name="description" content="Emmanuel Adutwum - Professional Ghanaian-born drummer, pianist, guitarist and musician. Jazz performances, gospel music, Afrobeat fusion. BA Economics & Mathematics, MITx Statistics & Data Science.">
+    <meta name="keywords" content="Emmanuel Adutwum, EmmanuelOnBeats, jazz drummer, pianist, guitarist, Ghanaian musician, Soka University, music portfolio, professional musician, Orange County musician, Afrobeat, gospel music">
+    <meta name="author" content="Emmanuel Adutwum">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Emmanuel Adutwum | Professional Musician Portfolio">
+    <meta property="og:description" content="Professional drummer, pianist, guitarist and musician. Jazz performances, gospel music, Afrobeat fusion. BA Economics & Mathematics, MITx Statistics & Data Science.">
+    <meta property="og:image" content="https://emmanuelonbeats.github.io/images/about-photo.jpg">
+    <meta property="og:url" content="https://emmanuelonbeats.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="EmmanuelOnBeats">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Emmanuel Adutwum | Professional Musician">
+    <meta name="twitter:description" content="Professional drummer, pianist, guitarist and musician portfolio. Jazz, gospel, Afrobeat performances.">
+    <meta name="twitter:image" content="https://emmanuelonbeats.github.io/images/about-photo.jpg">
+    <meta name="twitter:creator" content="@emmanuelonbeats">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://emmanuelonbeats.github.io/">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Emmanuel Adutwum",
+      "url": "https://emmanuelonbeats.github.io/",
+      "image": "https://emmanuelonbeats.github.io/images/about-photo.jpg",
+      "jobTitle": "Professional Musician",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "EmmanuelOnBeats"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Soka University of America"
+        }
+      ],
+      "knowsAbout": ["Music", "Jazz", "Drumming", "Piano", "Guitar", "Afrobeat", "Gospel Music"],
+      "sameAs": [
+        "https://youtube.com/@emmanuelonbeats",
+        "https://instagram.com/emmanuelonbeats",
+        "https://soundcloud.com/emmanuelonbeats"
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -886,10 +939,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" itemscope itemtype="https://schema.org/Person">
         <div class="hero-content fade-in">
-            <h1>Emmanuel Adutwum</h1>
-            <p>Professional Drummer, Percussionist, Guitarist, and Pianist</p>
+            <h1 itemprop="name">Emmanuel Adutwum</h1>
+            <p itemprop="jobTitle">Professional Drummer, Percussionist, Guitarist, and Pianist</p>
             <div style="margin-top: 30px;">
                 <a href="#performances" class="btn">View My Performances</a>
                 <a href="#contact" class="btn btn-outline" style="margin-left: 15px;">Get In Touch</a>
@@ -897,7 +950,7 @@
         </div>
     </section>
 
-          <!-- About Section -->
+    <!-- About Section -->
     <section id="about">
         <div class="container">
             <div class="section-title">
@@ -969,11 +1022,12 @@
                     </div>
                 </div>
                 <div class="about-image fade-in">
-                    <img src="images/about-photo.jpg" alt="Emmanuel Adutwum - Professional Musician">
+                    <img src="images/about-photo.jpg" alt="Emmanuel Adutwum - Professional Musician" itemprop="image">
                 </div>
             </div>
         </div>
     </section>
+
     <!-- Performances Section -->
     <section id="performances" style="background: var(--secondary);">
         <div class="container">
