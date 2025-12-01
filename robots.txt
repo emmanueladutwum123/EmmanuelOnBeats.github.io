@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://emmanuelonbeats.github.io/sitemap.xml
